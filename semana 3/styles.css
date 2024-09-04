@@ -1,0 +1,215 @@
+/* Normalize */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+    text-align: center; /* Agregado para centrar la información */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%; /* Reducido el ancho para que no ocupe toda la página */
+    margin: 0 auto; /* Agregado para centrar la tabla */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-bottom: 20px;
+    text-align: center; /* Agregado para centrar los formularios */
+    display: inline-block; /* Agregado para que los formularios no ocupen todo el ancho */
+    width: 40%; /* Reducido el ancho para que no ocupe toda la página */
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    display: block; /* Agregado para que los campos de texto se muestren verticalmente */
+    margin-bottom: 15px; /* Aumentado el margen inferior para separar los campos */
+    width: 80%; /* Reducido el ancho para que no ocupe toda la página */
+    height: 30px; /* Aumentado la altura de los campos */
+    padding: 10px; /* Agregado relleno para que los campos sean más cómodos */
+}
+
+input[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #23527c;
+}
+
+/* Layout */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Agregado para centrar el contenido */
+}
+
+/* Index.php */
+#index-php {
+    text-align: center;
+}
+
+#index-php h1 {
+    margin-bottom: 20px;
+}
+
+#index-php table {
+    margin-top: 20px;
+}
+
+/* Crear_cliente.php */
+#crear-cliente {
+    padding: 20px;
+    text-align: center; /* Agregado para centrar el contenido */
+}
+
+#crear-cliente h1 {
+    margin-bottom: 10px;
+}
+
+#crear-cliente form {
+    margin-top: 20px;
+}
+
+/* Editar_cliente.php */
+#editar-cliente {
+    width: 80%; /* Ancho del formulario */
+    margin: 40px auto; /* Margen superior e inferior de 40px y centrado horizontalmente */
+    padding: 20px; /* Relleno interno de 20px */
+    border: 1px solid #ccc; /* Borde de 1px de color gris claro */
+    border-radius: 10px; /* Esquinas redondeadas de 10px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra de 10px de color negro con opacidad del 10% */
+    text-align: center; /* Agregado para centrar el contenido */
+}
+
+#editar-cliente h1 {
+    margin-bottom: 10px;
+}
+
+#editar-cliente form {
+    display: flex; /* Display flex para centrar los botones */
+    flex-direction: column; /* Dirección de la flexibilidad en columna */
+    align-items: center; /* Alineación de los elementos en el centro */
+    margin-top: 20px;
+}
+
+#editar-cliente form input[type="submit"] {
+    margin: 10px; /* Margen de 10px para los botones */
+    padding: 10px 20px; /* Relleno interno de 10px y ancho de 20px para los botones */
+    border: none; /* Sin borde para los botones */
+    border-radius: 5px; /* Esquinas redondeadas de 5px para los botones */
+    background-color: #4CAF50; /* Color de fondo verde para los botones */
+    color: #fff; /* Color de texto blanco para los botones */
+    cursor: pointer; /* Cursor de mano para los botones */
+}
+
+#editar-cliente form input[type="submit"]:hover {
+    background-color: #3e8e41; /* Color de fondo verde oscuro para los botones al pasar el cursor */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    
+    #editar-cliente {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    #editar-cliente form {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #editar-cliente form input[type="submit"] {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Estilos para pantallas muy pequeñas */
+    .container {
+        padding: 5px;
+    }
+    
+    #editar-cliente {
+        padding: 5px;
+    }
+    
+    #editar-cliente form {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #editar-cliente form input[type="submit"] {
+        margin: 5px 0;
+    }
+}
